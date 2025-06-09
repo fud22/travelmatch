@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMatch</title>
+
+  <!-- Orbit 폰트 적용 -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="banner">
+    <img src="images/banner.jpg" alt="sea banner">
+  </div>
+
+  <div class="container">
+    <img src="images/globe.png" alt="globe" class="top-icon">
+    <h1>✈️ 오늘 당신을 위한 여행지는?</h1>
+    <p>당신의 여행 취향을 단계별로 선택해 주세요!</p>
+
+    <fieldset>
+      <legend><h3>1단계. 여행 기간</h3></legend>
+      <input type="radio" id="long" name="duration" value="장기"><label for="long">장기</label>
+      <input type="radio" id="short" name="duration" value="단기"><label for="short">단기</label>
+    </fieldset>
+
+    <fieldset>
+      <legend><h3>2단계. 여행 스타일</h3></legend>
+      <input type="radio" id="luxury" name="budget" value="럭셔리"><label for="luxury">럭셔리</label>
+      <input type="radio" id="cheap" name="budget" value="가성비"><label for="cheap">가성비</label>
+    </fieldset>
+
+    <fieldset>
+      <legend><h3>3단계. 여행 환경</h3></legend>
+      <input type="radio" id="nature" name="type" value="자연"><label for="nature">자연</label>
+      <input type="radio" id="city" name="type" value="도시"><label for="city">도시</label>
+    </fieldset>
+
+    <br><br>
+    <button id="recommend-btn">💌 여행지 추천 받을래요!</button>
+
+    <div id="destination-card" class="card hidden">
+      <img src="" alt="여행지 이미지" id="dest-img">
+      <h2 id="dest-name"></h2>
+      <p id="dest-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
